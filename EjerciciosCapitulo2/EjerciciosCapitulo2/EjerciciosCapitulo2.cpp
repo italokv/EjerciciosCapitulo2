@@ -82,7 +82,7 @@ int main()
 }
 */
 
-//Ejercicio 21
+//Ejercicio 2.21
 /*
 int main()
 {
@@ -97,7 +97,7 @@ int main()
 */
 
 
-//Ejercicio 24
+//Ejercicio 2.24
 /*
 int main()
 {
@@ -145,7 +145,7 @@ int main()
 }
 */
 
-//Ejercicio 25
+//Ejercicio 2.25
 /*
 int main()
 {
@@ -182,7 +182,7 @@ int main()
 */
 
 
-//Ejercicio 26
+//Ejercicio 2.26
 /*
 int main()
 {
@@ -204,7 +204,7 @@ int main()
 }
 */
 
-// ejercicio 2.17
+// ejercicio 2.27
 /*
 int main()
 {
