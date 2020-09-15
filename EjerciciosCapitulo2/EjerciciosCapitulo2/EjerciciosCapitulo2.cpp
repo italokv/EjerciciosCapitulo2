@@ -4,7 +4,15 @@
 #include <iostream>
 using namespace std;
 
-// ejercicio 2.17
+// ejercicio 2.17 2.17 (Impresión) Escriba un programa que imprima los caracteres V a Z en la misma línea con cada par de caracteres adyacentes separados por un espacio i.c.VX YZ.Haga esto de varias formas :
+
+//a) Usar una declaración con dos operadores de inserción de flujo.
+
+//b) Usar una declaración con el operador de inserción de cuatro flujos.
+
+//c) Usar dos declaraciones con un operador de inserción de flujo cach.
+
+
 /*
 int main()
 {
@@ -27,7 +35,10 @@ int main()
 */
 
 
-//ejercicio 2.18
+//ejercicio 2.18 2.18 (Comparación de enteros) Escriba un programa que le pida al usuario que ingrese dos enteros, obtenga el números del usuario, 
+//luego imprime el número mayor seguido de las palabras "es mayor".Si el los números son iguales, imprima el mensaje "Estos números son iguales".
+
+
 /*
 int main()
 {
@@ -82,7 +93,7 @@ int main()
 }
 */
 
-//Ejercicio 2.21
+//Ejercicio 2.21 2.21 (Visualización de letras grandes) Escriba un programa que imprima C ++ de la siguiente manera:
 /*
 int main()
 {
@@ -97,7 +108,10 @@ int main()
 */
 
 
-//Ejercicio 2.24
+//Ejercicio 2.24 2.24 (Impar o Par) Escriba un programa que lea en dos enteros y determine e imprima si cada entero, así como la suma de los dos enteros, es un número sumado.[Sugerencia Utilice el operador resto(%).
+//Un número impar no es múltiplo de dos.Cualquier número de adición tiene un resto de uno cuando se divide por 2.]
+
+
 /*
 int main()
 {
@@ -145,7 +159,9 @@ int main()
 }
 */
 
-//Ejercicio 2.25
+//Ejercicio 2.25 2.25 (Factores) Escriba un programa que lea en tres enteros y determine e imprima si el primero dos enteros son factores del segundo.[Sugerencia:use el operador restante(%).]
+
+
 /*
 int main()
 {
@@ -182,7 +198,7 @@ int main()
 */
 
 
-//Ejercicio 2.26
+//Ejercicio 2.26 2.26 (Patrón de tablero de ajedrez) Muestra el siguiente patrón de tablero de ajedrez con ocho salidas declaraciones, luego muestre el mismo patrón utilizando la menor cantidad posible de declaraciones.
 /*
 int main()
 {
@@ -204,29 +220,36 @@ int main()
 }
 */
 
-// ejercicio 2.27
+// ejercicio 2.27 Escribe un programa que imprime el equivalente entero de un carácter escrito en el teclado.Almacene la entrada en un variable de tipo char.
+//Pruebe su programa varias veces usando letras mayúsculas, minúsculas, dígitos sus y caracteres especiales(como $).
+
+
 /*
 int main()
 {
-	char a[] = "vxy z";
-	char b = 'v';
-	char c = 'x';
-	char d = 'y';
-	char e = 'z';
-	// utilizando una insteruccion con un operador de insercion de flujos 
-	cout << a << endl;
-	// utilizando una insteruccion con cuatro operadores de insercion de flujos 
-	cout << b << "\ t" << c << "\ t" << d << "\ t" << e << endl;
-	// utilizando cuatro instrucciones
-	cout << b;
-	cout << c;
-	cout << d;
-	cout << e;
+
+	char val;
+	cout << "ingrese un caracter: " << endl;
+	cin >> val;
+	int x = static_cast<int>(val);
+	if (x >= 65 && x <= 90 || x >= 97 && x <= 122)
+	{
+		cout << val << "es una letra";
+	}
+	else
+	{
+		cout << val << "no es una letra";
+	}
 	return 0;
+
 }
+
 */
 
-// Ejercicio 2.28
+// Ejercicio 2.28 2.28 (Dígitos de un entero) Escriba un programa que ingrese un entero de cuatro dígitos, separe el entero en sus dígitos y los imprime en orden inverso separados por dos espacios cada uno. 
+//| Hinz: usa el entero operadores de división y resto.) Por ejemplo, si el usuario escribe 4315, el programa debe imprimir :
+
+
 /*
 int main()
 {
@@ -248,7 +271,10 @@ int main()
 
 */
 
-// Ejercicio 2.29
+// Ejercicio 2.29 2.29 (Tabla) Usando las técnicas de este capítulo, escriba un programa que calcule el área de la superficie y volumen de cubos con longitudes de cara de 0 a 4 cm.
+//Utilice pestañas para imprimir lo siguiente con un formato prolijo tabla de valores :
+
+
 /*
 int main()
 {
@@ -276,21 +302,21 @@ int main()
 }
 */
 
-//Ejercicio 2.30
+//Ejercicio 2.30 2.30 (Calculadora del índice de masa corporal) Introdujimos la calculadora del índice de masa corporal (IMC) en Ejercicio 1.9.Las fórmulas para calcular el IMC son:
 
 int main()
 {
-	float a, p, imc;
+	float altura, peso, imc;
 
 	cout << "CALCULADORA DE INC:" << endl;
 
 	cout << "Ingresa tu peso (Kg): ";
-	cin >> p;
+	cin >> peso;
 
 	cout << "Ingresa tu altura (mts): ";
-	cin >> a;
+	cin >> altura;
 
-	imc = p / (a * a);
+	imc = peso / (altura * altura);
 
 
 
